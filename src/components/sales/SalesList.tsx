@@ -145,7 +145,7 @@ const SalesList = () => {
                         <option value="pending">Pending</option>
                       </select>
                     </TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                           <Button variant="ghost" className="h-8 w-8 p-0">
@@ -169,7 +169,7 @@ const SalesList = () => {
                           </DropdownMenuItem>
                         </DropdownMenuContent>
                       </DropdownMenu>
-                    </TableCell>
+                    </TableCell> */}
                   </TableRow>
                 ))
               ) : (

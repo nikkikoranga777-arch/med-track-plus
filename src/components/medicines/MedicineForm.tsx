@@ -161,7 +161,7 @@ const   MedicineForm = () => {
           </div>
           
           <div className="space-y-2">
-            <Label htmlFor="price">Price ($) *</Label>
+            <Label htmlFor="price">Price (Rs) *</Label>
             <Input
               id="price"
               name="price"

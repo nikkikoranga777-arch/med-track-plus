@@ -145,10 +145,10 @@ const MedicineList = () => {
                           </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
-                          <DropdownMenuItem >
+                          {/* <DropdownMenuItem >
                             <Pencil className="mr-2 h-4 w-4" />
                             Edit
-                          </DropdownMenuItem>
+                          </DropdownMenuItem> */}
                           <DropdownMenuSeparator />
                           <DropdownMenuItem className="text-red-600" onClick={() => {
                               const confirmDelete = window.confirm("Do you want to delete this?");

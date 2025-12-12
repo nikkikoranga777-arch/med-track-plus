@@ -89,12 +89,12 @@ const Sidebar = () => {
             <Settings className="w-5 h-5" />
             Settings
           </Link> */}
-          <button
+          {/* <button
             className="flex w-full items-center gap-3 px-3 py-2 rounded-md text-sm font-medium text-sidebar-foreground hover:bg-sidebar-accent/50 transition-colors"
           >
             <LogOut className="w-5 h-5" />
             Logout
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
