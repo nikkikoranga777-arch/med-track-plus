@@ -140,7 +140,7 @@ const CustomerList = () => {
                             }}>
                               View Details
                             </DropdownMenuItem>
-                            <DropdownMenuItem>
+                            {/* <DropdownMenuItem>
                               <UserRoundPen className="mr-2 h-4 w-4" />
                               Edit
                             </DropdownMenuItem>
@@ -148,7 +148,7 @@ const CustomerList = () => {
                             <DropdownMenuItem className="text-red-600">
                               <UserRoundMinus className="mr-2 h-4 w-4" />
                               Delete
-                            </DropdownMenuItem>
+                            </DropdownMenuItem> */}
                           </DropdownMenuContent>
                         </DropdownMenu>
                       </TableCell>

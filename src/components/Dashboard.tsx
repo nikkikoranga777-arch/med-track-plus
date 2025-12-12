@@ -18,12 +18,12 @@ const Dashboard = () => {
   const { AllMedicine, AllCustomer, AllSales} = useStore()
 
   console.log("this is the sales", AllSales)
-  const totalSales = AllSales.reduce((sum, sale) => sum + sale.subtotal, 0);
-  const totalMedicines = AllMedicine?.result.length;
+  const totalSales = AllSales.reduce((sum, sale) => sum + sale?.subtotal, 0);
+  const totalMedicines = AllMedicine?.result?.length;
   const totalCustomers = AllCustomer.length;
   
-  const lowStockCount = getLowStockMedicines().length;
-  const expiringCount = getExpiringMedicines().length;
+  const lowStockCount = getLowStockMedicines()?.length;
+  const expiringCount = getExpiringMedicines()?.length;
   const alertsCount = lowStockCount + expiringCount;
   
   const recentSales = sales.sort((a, b) => 
@@ -178,7 +178,7 @@ const Dashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
-                {getLowStockMedicines().length > 0 ? (
+                {getLowStockMedicines()?.length > 0 ? (
                   getLowStockMedicines().map(medicine => (
                     <div key={medicine.id} className="flex justify-between items-center border-b pb-2">
                       <div>
@@ -204,7 +204,7 @@ const Dashboard = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
-                {getExpiringMedicines().length > 0 ? (
+                {getExpiringMedicines()?.length > 0 ? (
                   getExpiringMedicines().map(medicine => (
                     <div key={medicine._id} className="flex justify-between items-center border-b pb-2">
                       <div>
